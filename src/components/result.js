@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 
+
 const CustomResultPage = (props) => {
   const { result } = props
   return (
@@ -38,6 +39,7 @@ const CustomResultPage = (props) => {
       <div>
         <h4>Your score</h4>
       </div> */}
+
     </div>
   )
 }

@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `COVID-19 Quiz`,
-    description: `We are united in this fight against Covid19`,
+    description: `We are united in this fight against Covid19.`,
     author: `@humoursapiens1`,
+    url: "http://covid19-quiz.humoursapiens.com",
+    share: `We are united in this fight against Covid19. Know the virus to win the war!`
   },
   plugins: [
 

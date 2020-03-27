@@ -650,3 +650,14 @@ pre tt:after {
 .game-score {
   color: #5a11dc
 }
+
+.social-share {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-btns {
+  display:flex;
+  align-items: center;
+  
+}

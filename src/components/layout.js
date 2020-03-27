@@ -5,12 +5,19 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useState } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import { FacebookShareButton, TwitterShareButton, WhatsappShareButton, TelegramShareButton } from "react-share";
+import {
+  FacebookIcon,
+  TelegramIcon,
+  WhatsappIcon,
+  TwitterIcon
+} from "react-share";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,13 +25,16 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          url
+          description,
+          share
         }
       }
     }
   `)
 
   return (
-    <div>
+    <div className="main-app">
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -36,18 +46,39 @@ const Layout = ({ children }) => {
         <main>
           {children}
         </main>
-
       </div>
-    </div>
+      <footer>
+        <div className="social-share">
+          <h4>Spread awareness! Share now</h4>
+          <div className="social-btns">
+            <FacebookShareButton
+              url={data.site.siteMetadata.url}
+              quote={data.site.siteMetadata.share}>
+              <FacebookIcon size={64} ></FacebookIcon>
+            </FacebookShareButton>
+            <TwitterShareButton
+              url={data.site.siteMetadata.url}
+              title={data.site.siteMetadata.share}>
+              <TwitterIcon size={64} />
+            </TwitterShareButton>
+            <WhatsappShareButton
+              url={data.site.siteMetadata.url}
+              title={data.site.siteMetadata.share}>
+              <WhatsappIcon size={64}></WhatsappIcon>
+            </WhatsappShareButton>
+            <TelegramShareButton
+              url={data.site.siteMetadata.url}
+              title={data.site.siteMetadata.share}
+              separator=":: ">
+              <TelegramIcon size={64}></TelegramIcon>
+            </TelegramShareButton>
+          </div>
+        </div>
+      </footer>
+    </div >
   )
 }
-/**
- *  <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
- */
+
 Layout.propTypes = {
   children: PropTypes.node.isRequired
 }
