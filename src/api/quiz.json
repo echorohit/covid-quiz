@@ -1,0 +1,66 @@
+{
+  "quizTitle": "Let's see how much you know about Covid19(Corona Virus)",
+  "quizSynopsis": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
+  "questions": [
+    {
+      "question": "What is best to clean your hands?",
+      "correctAnswer": "1",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "point": 10,
+      "answers": [
+        "Soap and Water",
+        "Alcohol based Sanitizer",
+        "Water is enough",
+        "Soil"
+      ]
+    },
+    {
+      "question": "How does Corona virus spread?",
+      "correctAnswer": "3",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "point": 10,
+      "answers": [
+        "Eating Chicken",
+        null,
+        "Get in contact of an infected person?",
+        null
+      ]
+    },
+    {
+      "question": "First outbreak of coronavirus happened in?",
+      "correctAnswer": "1",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "point": 10,
+      "answers": [
+        "Wuhan",
+        "Shanghai",
+        "Singapore",
+        "Rome"
+      ]
+    },
+    {
+      "question": "What is minimum distance we should maintained from other person during this time?",
+      "correctAnswer": "1",
+      "questionType": "text",
+      "answerSelectionType": "single",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "point": 10,
+      "answers": [
+        "3feet",
+        "5feet",
+        "1feet",
+        "Not needed"
+      ]
+    }
+  ]
+}
