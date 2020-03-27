@@ -38,7 +38,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gatsby-plugin-s3 deploy",
-    "s3:deploy": "npm run build && npm run deploy"
+    "s3:deploy": "node parseExcel.js && npm run build && npm run deploy"
   },
   "repository": {
     "type": "git",

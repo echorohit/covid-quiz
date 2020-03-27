@@ -624,5 +624,29 @@ pre tt:after {
 .react-quiz-container {
   width: 100% !important;
   margin:0 !important;
-  
+}
+
+.custom-result {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.custom-result .score {
+  font: 400;
+  font-size: 2.5rem;
+}
+.red {
+  color: red;
+}
+.total-color {
+  color: #001df7
+}
+.correct-answer {
+  color: #30f700;
+}
+.total {
+  color: #d8d816
+}
+.game-score {
+  color: #5a11dc
 }

@@ -12,10 +12,10 @@ const renderCustomResultPage = (obj) => {
   )
 }
 const IndexPage = () => (
-  <Layout>
+  <Layout >
     <SEO title="Home" />
     <Quiz quiz={QuizData} className="quiz-100" showDefaultResult={false} customResultPage={renderCustomResultPage} />
-  </Layout>
+  </Layout >
 )
 
 export default IndexPage

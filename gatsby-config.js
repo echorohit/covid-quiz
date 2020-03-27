@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Fight Covid19`,
+    title: `COVID-19 Quiz`,
     description: `We are united in this fight against Covid19`,
     author: `@humoursapiens1`,
   },

@@ -9,19 +9,17 @@ const questions = xlData.map(question => {
     question.option_1,
     question.option_2,
     question.option_3,
-    question.option_4
   ]
   delete question.option_1
   delete question.option_2
   delete question.option_3
-  delete question.option_4
   question.correctAnswer = question.correctAnswer.toString()
   return question
 })
 
 const quizObject = {
-  "quizTitle": "Let's see how much you know about Covid19(Corona Virus)",
-  "quizSynopsis": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
+  "quizTitle": "How much do you know about COVID-19? Let’s find out!",
+  "quizSynopsis": `With this deadly pandemic affecting thousands of people and taking hundreds of lives every day across the globe, it becomes all the more important to know most about it.Because, the more you know, the easier it gets to tackle it.`,
   "questions": questions
 }
 
