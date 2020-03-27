@@ -11,10 +11,13 @@ const renderCustomResultPage = (obj) => {
     <CustomResultPage result={obj}></CustomResultPage>
   )
 }
+const quizData = JSON.parse(JSON.stringify(QuizData));
+quizData.questions = quizData.questions.sort(() => 0.5 - Math.random());
+quizData.questions = quizData.questions.slice(0, 10);
 const IndexPage = () => (
   <Layout >
     <SEO title="Home" />
-    <Quiz quiz={QuizData} className="quiz-100" showDefaultResult={false} customResultPage={renderCustomResultPage} />
+    <Quiz quiz={quizData} className="quiz-100" showDefaultResult={false} customResultPage={renderCustomResultPage} />
   </Layout>
 )
 
