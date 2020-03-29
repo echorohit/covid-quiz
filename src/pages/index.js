@@ -16,7 +16,7 @@ quizData.questions = quizData.questions.sort(() => 0.5 - Math.random());
 quizData.questions = quizData.questions.slice(0, 10);
 const IndexPage = () => (
   <Layout >
-    <SEO title="Home" />
+    <SEO title="Covid-19 Quiz" />
     <Quiz quiz={quizData} className="quiz-100" showDefaultResult={false} customResultPage={renderCustomResultPage} />
   </Layout>
 )
